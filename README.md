@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img align="center" alt="SBSI" height="80" width="280" src="https://ppcomp-ifes.github.io/sbsi/src/assets/logo-sbsi-2026-removebg-preview.png"> <br>
+  <img align="center" alt="SBSI" height="180" width="180" src="https://ppcomp-ifes.github.io/sbsi/src/assets/logo-sbsi-2026-removebg-preview.png"> <br>
   <br>
    Hybrid Summarization for Brazilian Judicial Decisions
   <br>
