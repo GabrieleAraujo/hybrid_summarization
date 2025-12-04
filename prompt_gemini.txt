@@ -1,12 +1,11 @@
 def build_legal_prompt(text: str, ementas_exemplo: List[str], word_limit=(50,100)) -> str:
     """
-    Constrói um prompt detalhado para geração de ementas jurídicas.
-    - text: conteúdo do processo/acórdão.
-    - ementas_exemplo: lista de ementas de referência para estilo e formatação.
+    - text: conteúdo do processo/acórdão;
+    - ementas_exemplo: lista de ementas de referência para estilo e formatação;
     - word_limit: limite de palavras para o corpo da ementa (dispositivo + conclusão).
     """
     prompt = "Você é um especialista em redação de ementas jurídicas concisas e claras em português.\n"
-    prompt += "Sua tarefa é transformar o texto jurídico fornecido em uma **ementa jurídica**, seguindo a estrutura padronizada (Cabeçalho, Tese/Dispositivo e Conclusão/Resultado).\n\n"
+    prompt += "Sua tarefa é transformar o texto jurídico fornecido em uma **ementa jurídica**, seguindo a estrutura padronizada: Cabeçalho, Tese/Dispositivo e Conclusão/Resultado.\n\n"
 
     prompt += "Siga os exemplos de ementas abaixo para capturar o estilo, a concisão e a formatação desejados:\n\n"
 
