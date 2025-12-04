@@ -1,0 +1,33 @@
+def build_legal_prompt(text: str, ementas_exemplo: List[str], word_limit=(50,100)) -> str:
+    """
+    Constrói um prompt detalhado para geração de ementas jurídicas.
+    - text: conteúdo do processo/acórdão.
+    - ementas_exemplo: lista de ementas de referência para estilo e formatação.
+    - word_limit: limite de palavras para o corpo da ementa (dispositivo + conclusão).
+    """
+    prompt = "Você é um especialista em redação de ementas jurídicas concisas e claras em português.\n"
+    prompt += "Sua tarefa é transformar o texto jurídico fornecido em uma **ementa jurídica**, seguindo a estrutura padronizada (Cabeçalho, Tese/Dispositivo e Conclusão/Resultado).\n\n"
+
+    prompt += "Siga os exemplos de ementas abaixo para capturar o estilo, a concisão e a formatação desejados:\n\n"
+
+    for i, ementa in enumerate(ementas_exemplo, 1):
+        prompt += f"Exemplo {i}: {ementa}\n\n"
+
+    prompt += f"""**Instruções de Estrutura e Formatação**:
+1. **CABEÇALHO/VERBETAÇÃO**: Comece com palavras-chave em caixa alta, separadas por pontos finais e sem pontuação final (ex: DIREITO CONSTITUCIONAL. RECURSO EXTRAORDINÁRIO. ICMS).
+2. **TESE CENTRAL/DISPOSITIVO**: Redija enunciados completos, concisos e numerados que contenham o entendimento do Tribunal, os fundamentos jurídicos relevantes e as teses firmadas.
+3. **CONCLUSÃO/RESULTADO (Opcional)**: Termine com o resultado do julgamento em uma frase final (ex: Recurso desprovido.).
+
+**Entrada para Ementa**:
+{text}
+
+**Parâmetros Adicionais**:
+- Foque nos pontos centrais do texto, destacando a decisão principal e os fundamentos jurídicos.
+- Mantenha coerência, clareza e linguagem formal/técnica.
+- Comprimento desejado para o corpo do texto (Dispositivo e Conclusão): {word_limit[0]}-{word_limit[1]} palavras.
+- Evite bullet.
+- Não inclua opiniões pessoais ou interpretações.
+
+**Resumo**:"""
+
+    return prompt
