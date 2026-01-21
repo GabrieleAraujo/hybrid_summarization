@@ -13,7 +13,10 @@
   <br>
 </h1>
 
-<h4 align="center">Este repositório contém os resumos gerados pelos modelos e resultados das métricas de avaliação do artigo submetido ao <br> XXII Brazilian Symposium on Information Systems (<a href="https://sbsi.sbc.org.br/2026//">SBSI 2026</a>)</h4>
+<h4 align="center">
+This repository contains the datasets and experimental results of the article submitted to a conference in the <br> XXII Brazilian Symposium on Information Systems (<a href="https://sbsi.sbc.org.br/2026//">SBSI 2026</a>)
+</h4>
+
 
 <p align="center">
   <a href="#abstract">Abstract</a> •
@@ -54,6 +57,8 @@ Hybrid methods provide competitive performance while reducing computational cost
 
 ## License
 This project is licensed under the MIT License.
+
+---
 
 ## Authors
 
