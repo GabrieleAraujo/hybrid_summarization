@@ -22,7 +22,8 @@ This repository contains the datasets and experimental results of the article su
   <a href="#abstract">Abstract</a> •
   <a href="#dataset">Dataset</a> •
   <a href="#results">Results</a> •
-  <a href="#authors">Authors</a> 
+  <a href="#authors">Authors</a> •
+  <a href="#citation">Citation</a>
 </p>
 
 ## Abstract
@@ -93,3 +94,16 @@ This project is licensed under the MIT License.
     </td>
   </tr>
 </table>
+
+## Citation
+
+```
+@inproceedings{araujo2026hybrid,
+  title={Hybrid Summarization for Brazilian Judicial Decisions},
+  author={Ara{\'u}jo, Gabriele S and Santana, Ewaldo EC and Lobato, F{\'a}bio MF},
+  booktitle={Simp{\'o}sio Brasileiro de Sistemas de Informa{\c{c}}{\~a}o (SBSI)},
+  pages={910--929},
+  year={2026},
+  organization={SBC}
+}
+```
