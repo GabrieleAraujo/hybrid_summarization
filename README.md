@@ -104,6 +104,7 @@ This project is licensed under the MIT License.
   booktitle={Simp{\'o}sio Brasileiro de Sistemas de Informa{\c{c}}{\~a}o (SBSI)},
   pages={910--929},
   year={2026},
-  organization={SBC}
+  organization={SBC},
+  doi={https://doi.org/10.5753/sbsi.2026.248671}
 }
 ```
